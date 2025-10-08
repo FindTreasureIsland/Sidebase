@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sidebase Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      width: 300px;
+    }
+    .setting {
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sidebase Settings</h1>
+  <div class="setting">
+    <label for="highlight-color">Keyword Highlight Color:</label>
+    <input type="color" id="highlight-color" name="highlight-color">
+  </div>
+
+  <div class="setting">
+    <label for="blacklist">Blacklisted Websites (one per line):</label>
+    <textarea id="blacklist" name="blacklist" rows="5" style="width: 100%;"></textarea>
+  </div>
+
+  <p id="status"></p>
+
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

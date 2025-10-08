@@ -1,0 +1,6 @@
+Analyze the following text from a webpage. Based on the content, identify and extract the 20 most relevant and important keywords or keyphrases. These should represent the main topics and concepts discussed in the text. Return the keywords as a JSON array of strings.
+
+Text:
+"""
+{page_content}
+"""

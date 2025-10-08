@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Sidebase",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting", "sidePanel"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "options_page": "options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sidebar.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+You are a helpful assistant. For the given keyword, provide a concise summary (around 100-150 words) based on your internal knowledge. Do not perform an external search.
+
+Your response should be in Markdown format.
+
+回答请使用中文。
+
+Keyword: "{keyword}"
